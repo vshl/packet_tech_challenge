@@ -1,0 +1,42 @@
+about:
+  name: Vishal Ravi Shankar
+  location: San Francisco, CA
+  timezone: UTC-07
+  hobbies:
+    - 'Gaming'
+    - 'Hiking'
+    - 'Reading Books/Comics'
+  favorite_resources:
+    - 'r/programming'
+
+# be a mentor
+bam:
+  skills:
+    - 'Team player and a fast-learner'
+    - 'Command-line fu, love *NIX and everything TUI'
+    - 'Tinkerer of servers and backend infrastructure/configuration e.g. LAMP'
+    - 'Diverse technical work experience in number of backgrounds and job roles'
+  languages/paradigms:
+    - [Python, 7]
+    - [Ruby, 5]
+    - [Java, 4]
+  frameworks/libraries/concepts:
+    - [Rails, 5]
+    - [Symfony, 4]
+    - [Android, 4]
+sam:
+  skills:
+    - 'Deep dive into RoR and backend software development'
+    - 'Develop more exposure to front-end development'
+    - 'Understand concepts like concurrency, scalability, performance'
+    - 'Usually an introvert, wish to improve public speaking, communication'
+    - 'Learn best coding practices and patterns'
+  languages/paradigms:
+    - JavaScript, Typescript
+    - Go
+    - CSS
+  frameworks/libraries/concepts:
+    - React
+    - Redux
+    - NodeJS
+
