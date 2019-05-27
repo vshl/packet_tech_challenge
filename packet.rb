@@ -37,13 +37,13 @@ class Device
   end
 
   def boot
-    return if my_device.nil? || my_device.active?
+    return false if my_device.nil? || my_device.active? || my_device.provisioning?
 
     client.power_on_device(my_device)
   end
 
   def powerdown
-    return if my_device.nil? || my_device.inactive?
+    return false if my_device.nil? || my_device.inactive? || my_device.provisioning?
 
     client.power_off_device(my_device)
   end
