@@ -22,4 +22,24 @@ describe Device do
       end
     end
   end
+
+  describe 'boot' do
+    it 'does not power up a device when provisioning' do
+      expect(device.boot).to eq false if device.my_device.provisioning?
+    end
+
+    it 'does power up a device' do
+      expect(device.boot).to eq true unless device.my_device.provisioning?
+    end
+  end
+
+  describe 'powerdown' do
+    it 'does not power down a device when provisioning' do
+      expect(device.powerdown).to eq false if device.my_device.provisioning?
+    end
+
+    it 'does power down a device' do
+      expect(device.powerdown).to eq true unless device.my_device.provisioning?
+    end
+  end
 end
