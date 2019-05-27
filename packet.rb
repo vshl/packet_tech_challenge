@@ -16,9 +16,9 @@ class Device
   end
 
   def tear_down_device
-    return if my_device.nil? || my_device.provisioning?
+    return if my_device.nil?
 
-    client.delete_device(my_device)
+    client.delete_device(my_device) unless my_device.provisioning?
   rescue Packet::Error => e
     puts e
   end

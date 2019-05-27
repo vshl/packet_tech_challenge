@@ -17,9 +17,7 @@ describe Device do
 
   describe 'tear_down_device' do
     it 'tears down device' do
-      if device.my_device.provisioning?
-        expect { device.tear_down_device }.to change { device.number_of_devices }.by(0)
-      else
+      unless device.my_device.provisioning?
         expect { device.tear_down_device }.to change { device.number_of_devices }.by(-1)
       end
     end
