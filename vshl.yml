@@ -20,6 +20,7 @@ bam:
     - [Python, 7]
     - [Ruby, 5]
     - [Java, 4]
+    - [Linux, 8]
   frameworks/libraries/concepts:
     - [Rails, 5]
     - [Symfony, 4]
